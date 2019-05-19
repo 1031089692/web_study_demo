@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>section元素</title>
+</head>
+<body>
+<!--article和section的区别：实质上没得区别，两个都可以用。section通常由内容及其标题组成-->
+    <section>
+        <h1>苹果</h1>
+        <p>这是一个水果，可以吃。</p>
+    </section>
+
+    <article>
+        <h1>大苹果</h1>
+        <p>这是一个大苹果</p>
+        <section>
+            <h2>小苹果</h2>
+            <p>这是一个小苹果</p>
+        </section>
+        <section>
+            <h2>大大苹果</h2>
+            <p>这是一个大大苹果</p>
+        </section>
+    </article>
+<!--这个article因为层次分明示所以第一块不需要写成section也能识别-->
+    <section>
+        <h1>水果</h1>
+        <article>
+            <h2>香蕉</h2>
+            <p>这是一个大香蕉</p>
+        </article>
+        <article>
+            <h2>葡萄</h2>
+            <p>这是一个大葡萄</p>
+        </article>
+        <article>
+            <h2>菠萝</h2>
+            <p>这是一个大菠萝</p>
+        </article>
+    </section>
+
+</body>
+</html>
