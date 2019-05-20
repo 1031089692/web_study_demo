@@ -1,0 +1,12 @@
+body{
+    background-image: url("timg.jpeg");
+    background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+    /*background-attachment: local;*/
+    /*background-position: 180px 100px;*/
+}
+/*p{*/
+/*    background-image: url("timg.jpeg");*/
+/*    width: 200px;*/
+/*    padding: 10px;*/
+/*}*/
