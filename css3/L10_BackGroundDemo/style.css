@@ -1,12 +1,64 @@
-body{
-    background-image: url("timg.jpeg");
-    background-repeat: no-repeat;
-    background-size: 1000px 1000px;
-    /*background-attachment: local;*/
-    /*background-position: 180px 100px;*/
-}
+/*body{*/
+/*    background-image: url("timg.jpeg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: 1000px 1000px;*/
+/*    !*background-attachment: local;*!*/
+/*    !*background-position: 180px 100px;*!*/
+/*}*/
 /*p{*/
 /*    background-image: url("timg.jpeg");*/
 /*    width: 200px;*/
 /*    padding: 10px;*/
 /*}*/
+p{
+    /*text-shadow: 5px 5px 2px #FF0000;*/
+    font-size: 40px;
+    font-family: fantasy;
+}
+a:link{
+    color: red;
+    text-decoration: none;
+    background-color: aquamarine;
+}
+a:visited{
+    color: #00FF00;
+}
+a:hover{
+    color: #0000FF;
+}
+a:active{
+    color: #0000FF;
+}
+/*link-未被访问的链接，visited-已访问的链接，hover-鼠标指针位于链接的上方，active-链接被点击的时刻。*/
+ul li{
+    list-style-type: decimal;
+    /*list-style-image: url("icon.png");*/
+
+}
+/*这个icon展示有点问题，后面再看*/
+
+#tb{
+    border-collapse: collapse;
+    width: 500px;
+}
+#tb td,#tb th{
+    border: 1px solid bisque;
+    padding: 5px;
+    text-align: center;
+}
+#tb th{
+    text-align: center;
+    background-color: aqua;
+    color: #FFFFFF;
+}
+#tb tr.alt td{
+    color: black;
+    background-color: aquamarine;
+}
+
+#outline p{
+    outline-width: 5px;
+    outline-color: aqua;
+    outline-style: double;
+    /*dotted*/
+}
