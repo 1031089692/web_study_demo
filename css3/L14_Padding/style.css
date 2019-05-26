@@ -1,0 +1,43 @@
+/*p{*/
+/*    border-radius: 10px;*/
+/*    width: 200px;*/
+/*    background-color: aquamarine;*/
+/*    text-align: center;*/
+/*    border: 2px solid blue;*/
+/*}*/
+/*.cssid{*/
+/*    background-color: aquamarine;*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    text-align: center;*/
+/*    box-shadow: 10px 10px 5px #00FF00;*/
+/*}*/
+
+body{
+    margin: 0;
+}
+.container{
+    margin: 100px;
+}
+.bd{
+    border-style: dotted;
+}
+.pd{
+    padding: 100px;
+}
+.content{
+    background-color: blue;
+}
+
+.container1{
+    margin: 100px;
+}
+.bd1{
+    border-style: dotted;
+}
+.pd1{
+    padding: 100px;
+}
+.content1{
+    background-color: blue;
+}
