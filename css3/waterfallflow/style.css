@@ -1,0 +1,14 @@
+.container{
+    column-width: 250px;
+    column-gap: 5px;
+}
+.container div{
+    width: 250px;
+    margin: 5px 0;
+}
+.container p{
+    text-align: center;
+}
+/*实际样式跟屎一样。后面再改把*/
+
+
