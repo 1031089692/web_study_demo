@@ -1,0 +1,67 @@
+/**{*/
+/*    margin: 0;*/
+/*}*/
+/*.div{*/
+/*    width: 70%;*/
+/*    height: 200px;*/
+/*    background-color: aqua;*/
+/*    margin: 0 auto;*/
+/*}*/
+/*p{*/
+/*    cursor: cell;*/
+/*}*/
+/*li{*/
+/*    display: inline;*/
+/*    visibility: hidden;*/
+/*}*/
+body{
+    background-color: burlywood;
+}
+.header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+    text-align: center;
+}
+a:link,a:visited{
+    font-weight: bold;
+    text-decoration: none;
+    background-color: burlywood;
+    color: aliceblue;
+    width: 50px;
+    text-align: center;
+}
+a:active,a:hover{
+    background-color: crimson;
+}
+li{
+    display: inline;
+    padding: 100px 100px;
+}
+/*这里container的高度没有写死。是不规范的。后续再看*/
+.container{
+    margin: 10px auto;
+    width: 75%;
+    height: auto;
+    background-color: burlywood;
+}
+.image{
+    border: 1px solid darkgray;
+    width: auto;
+    height: auto;
+    float: left;
+    text-align: center;
+    margin: 5px;
+}
+img{
+    margin: 5px;
+    opacity: 0.9%;
+}
+.text{
+    font-size:15px;
+    margin-bottom: 5px;
+}
+a:hover{
+    background-color: burlywood;
+}
