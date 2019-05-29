@@ -5,9 +5,47 @@
     <title>Title</title>
 </head>
 <body>
-    <p id="pid">Hello</p>
     <script>
-        document.getElementById("pid").innerHTML="http://www.baidu.com"
+        var i=9;
+        if (i>10){
+            document.write("大于10");
+        }
+        else if (i<10){
+            document.write("小于10");
+        }
+        else{
+            document.write("等于10");
+        }
+    </script>
+    <br/>
+    <script>
+        var i =1;
+        switch (i) {
+            case 1 :
+                document.write("i=1");
+                break;
+            case 2 :
+                document.write("i=2");
+                break;
+            default:
+                document.write("条件不满足case");
+                break;
+        }
+    </script>
+    <br/>
+    <script>
+        var i=[1,2,3,4,5,6];
+        var j ;
+        for (j in i ){
+            document.write(i[j]+"<br/>")
+        }
+    </script>
+    <script>
+        var i =0;
+        while (i<10){
+            document.write("i="+i+"<br/>");
+            i++;
+        }
     </script>
 </body>
 </html>
