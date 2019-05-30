@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <img id="imgid" src="1.jpg" onclick="demo()">
+    <script>
+        function demo() {
+            document.getElementById("imgid").src="5.jpg"
+        }
+    </script>
+
+    <div id="div" class="div">hello</div>
+    <button onclick="demo2()">按钮</button>
+    <script>
+        function demo2() {
+            document.getElementById("div").style.background="blue";
+        }
+    </script>
+</body>
+</html>

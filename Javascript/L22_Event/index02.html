@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="div">
+        <button id="btn1">按钮</button>
+        <a href="http://www.baidu.com" id="aid">百度一下</a>
+    </div>
+    <script>
+        //这一块儿内容还要再看下。
+        document.getElementById("btn1").addEventListener("click",showType);
+        document.getElementById("div").addEventListener("click",showDiv);
+        document.getElementById("aid").addEventListener("click",showA);
+        function showType() {
+            //type：获取事件类型。target：获取事件目标
+            //alert(event.type);
+            alert(event.target);
+            event.stopPropagation(); //阻止事件冒泡
+        }
+        function showDiv() {
+            alert("div")
+        }
+        function showA(event) {
+            // event.stopPropagation();
+            //event.preventDefault() //阻止事件默认行为
+        }
+    </script>
+</body>
+</html>

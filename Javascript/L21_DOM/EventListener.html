@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EventListener</title>
+</head>
+<body>
+    <button id="btn">按钮</button>
+    <script>
+        var x = document.getElementById("btn");
+        x.addEventListener("click",hello);
+        x.addEventListener("click",world);
+        x.removeEventListener("click",world);
+        function hello() {
+            alert("hello");
+        }
+        function world() {
+            alert("world");
+        }
+    </script>
+</body>
+</html>

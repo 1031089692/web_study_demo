@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+</head>
+<body>
+    <div id="div">
+        <button id="btn1" onclick="demo()">按钮1</button>
+        <button id="btn2" >按钮2</button>
+        <button id="btn3" >按钮3</button>
+        <button id="btn4" >按钮4</button>
+    </div>
+    <script>
+        //缺点：修改比较多
+        function demo() {
+            alert("hello html事件处理")
+        }
+    </script>
+
+    <script>
+        //缺点：会被覆盖。优点：写法方便
+        var btn2 = document.getElementById("btn2");
+        btn2.onclick = function () {alert("Hello DOM 0级事件处理程序1")}; //被覆盖
+        btn2.onclick = function () {alert("Hello DOM 0级事件处理程序2")}; //被覆盖
+        btn2.onclick = function () {alert("Hello DOM 0级事件处理程序3")};
+            // btn2.onclick = null;
+    </script>
+
+    <script>
+        //缺点：写法没有0级那么方便。优点：不会被覆盖。
+        var btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",demo2);
+        btn3.addEventListener("click",demo3);
+        btn3.addEventListener("click",demo4);
+        function demo2() {
+            alert("DOM 2级事件处理程序1")
+        }
+        function demo3() {
+            alert("DOM 2级事件处理程序2")
+        }
+        function demo4() {
+            alert("DOM 2级事件处理程序3")
+        }
+    </script>
+
+    <script>
+        //对于不同版本游览器的兼容做处理
+        var btn4 = document.getElementById("btn4");
+        if(btn4.addEventListener){
+            btn4.addEventListener("click",demo5)
+        }else if (btn4.attachEvent){
+            btn4.attachEvent("onclick",demo5)
+        }else{
+            btn4.onclick = demo5();
+        }
+        function demo5() {
+            alert("Hello")
+        }
+    </script>
+</body>
+</html>
