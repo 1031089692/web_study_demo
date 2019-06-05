@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+</head>
+<body onload="startTime()">
+<!--    构建对象-->
+    <script>
+        function people(name,age) {
+            this.name = name;
+            this.age = age;
+        }
+        son = new people("iwen",30);
+        document.write("name:"+son.name,"age:"+son.age)
+    </script>
+    <br/>
+    <script>
+        //字符串
+        var str = "hello world";
+        var str1 = "Hello web";
+        document.write("字符串长度为:"+str.length);
+        document.write(str.indexOf("hello"));    //在字符串中查找字符串
+        document.write(str.match("world"));      //内容匹配
+        document.write(str.replace("world","django")); //内容替换
+        document.write(str.toUpperCase());      //转换大小写
+        var s = str1.split(" ");                //字符串切片
+        document.write(s[1]);
+    </script>
+    <br/>
+    <script>
+        //时钟
+        function startTime() {
+            var today = new Date();
+            var h = today.getHours();
+            var m = today.getMinutes();
+            var s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById("timetxt").innerHTML = h+":"+m+":"+s;
+            setTimeout(function () {
+                startTime();
+            },1000);
+        }
+        function checkTime(i) {
+            if (i<10) {
+                i = "0"+i
+            }
+            return i
+        }
+    </script>
+    <div id="timetxt"></div>
+    <br/>
+    <script>
+        //数组
+        var a = ["hello","world"];
+        var b = ["you","me"];
+        var c = a.concat(b); //合并
+        document.write(c);
+        var d = ["5","4","3","2","1"];
+        document.write(d.sort()); //排序
+        var e = ["a","b"];
+            e.push("c"); //追加
+        document.write(e);
+        var f = ["1","2","3"];
+        document.write(a.reverse()); //反转
+    </script>
+    <br/>
+    <script>
+        //Math
+        document.write(parseInt(Math.random()*10)); //0-10随机整数
+        document.write(Math.abs(-10));   //绝对值
+    </script>
+</body>
+</html>
