@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="username">
+    </form>
+    <button id="btn" onclick="safa()">提交</button>
+    <script>
+        //history.go()-进入中的某个界面
+        function safa() {
+            var name = document.getElementById("username").value;
+            if(name=="hello"){
+                history.go(-1);
+            }else{
+                alert("输入错误")
+            }
+        }
+    </script>
+
+</body>
+</html>

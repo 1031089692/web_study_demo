@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="myWin()">
+    <button id="btn" onclick="btnClicked()">关闭界面</button>
+    <br/>
+    <button id="bid" onclick="stopTime()">停止计时</button>
+    <p id="ptime"></p>
+    <button id="bid2" onclick="stopWin()">关闭弹窗</button>
+    <script>
+        //document.write("宽度"+window.innerWidth+"高度"+window.innerHeight);
+        function btnClicked() {
+            //window.open("obindex.html","windowname","height=500,width=500,top=100,left=100")
+            window.close()
+        }
+    </script>
+    <br/>
+    <script>
+        //setInterval:间隔指定的毫秒不停的执行指定的代码。这里是计时器
+        var mytime = setInterval(function () {
+            getTime();
+        },1000);
+        function getTime() {
+            var d = new Date();
+            var t = d.toLocaleTimeString();
+            document.getElementById("ptime").innerHTML= t;
+        }
+        //clearInterval方法用于停止setInterval
+        function stopTime() {
+            clearInterval(mytime)
+        }
+    </script>
+    <br/>
+    <script>
+        //setTimeout：暂停指定的时间后执行指定代码。这里是3s一个弹窗
+        var win;
+        function myWin(){
+            alert("hello");
+            win = setTimeout(function () {
+                myWin()
+            },3000);
+        }
+        //clearTimeout：用于停止setTimeOut方法
+        function stopWin() {
+            clearTimeout(win);
+        }
+    </script>
+</body>
+</html>

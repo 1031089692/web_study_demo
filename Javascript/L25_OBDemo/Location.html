@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn" onclick="getLoc()">按钮</button>
+    <p id="ptime"></p>
+    <script>
+        function getLoc() {
+            //document.getElementById("ptime").innerHTML = window.location.href;
+            location.assign("http://www.baidu.com")
+        }
+    </script>
+<!--    location对象的属性：-->
+<!--        pathname：当前页面的路径和文件名-->
+<!--        hostname：域名-->
+<!--        port：端口-->
+<!--        protocols：协议-->
+<!--        href：路径-->
+<!--        assign()：方法加载新的文档-->
+</body>
+</html>
